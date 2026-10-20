@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- 讓電腦、平板與手機依照裝置寬度正確呈現響應式版面。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- 設定瀏覽器分頁標題。 -->
+  <title>高中化學沉澱表測驗</title>
+
+  <!-- 預先連線到 Google Fonts，減少字型載入等待時間。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 載入指定的繁體中文字型。 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=LXGW+WenKai+Mono+TC&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- 載入指定版本的 p5.js。 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+
+  <!-- 載入本測驗的 p5.js 程式。defer 讓 HTML 先完成解析。 -->
+  <script src="sketch.js" defer></script>
+
+  <style>
+    /* 設定整個頁面填滿瀏覽器視窗，避免瀏覽器預設留白。 */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #84a98c;
+    }
+
+    /* 讓 p5.js 畫布成為區塊元素，消除底部行內空白。 */
+    canvas {
+      display: block;
+    }
+
+    /* 設定 p5.js 產生的按鈕共用樣式。 */
+    button {
+      font-family: "LXGW WenKai Mono TC", monospace;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body>
+  <!-- p5.js 會在此頁面自動建立全螢幕畫布與互動按鈕。 -->
+</body>
+</html>
